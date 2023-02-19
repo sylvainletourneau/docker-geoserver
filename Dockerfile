@@ -1,6 +1,6 @@
 #--------- Generic stuff all our Dockerfiles should start with so we get caching ------------
-ARG IMAGE_VERSION=9.0.65-jdk11-openjdk-slim-buster
-ARG JAVA_HOME=/usr/local/openjdk-11
+ARG IMAGE_VERSION=9.0.71-jdk17-temurin-focal
+ARG JAVA_HOME=/opt/java/openjdk
 FROM tomcat:$IMAGE_VERSION
 
 LABEL maintainer="Tim Sutton<tim@linfiniti.com>"
